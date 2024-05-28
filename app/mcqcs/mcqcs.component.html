@@ -1,0 +1,31 @@
+<h1><font color=green >CSS MCQ</font></h1>
+<form (ngSubmit)="submitdata()">
+<table class="table">
+    <thead>
+        <tr>
+            <th>QNO</th>
+            <th>Question Name</th>
+         
+            <th>Option 1</th>
+            <th>Option 2</th>
+            <th>Option 3</th>
+            <th>Option 4</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of add;index as i">  
+        <td>  <input type=hidden value="{{a.qno}}"> {{i+1}}</td>
+        <td>{{a.qname}}</td>
+       
+        <td><input type=radio value={{a.opt1}} name="{{a.qno}}" [(ngModel)]="uq[i]">{{a.opt1}}</td>
+        <td><input type=radio value={{a.opt2}} name="{{a.qno}}" [(ngModel)]="uq[i]">{{a.opt2}}</td>
+        <td><input type=radio value={{a.opt3}} name="{{a.qno}}" [(ngModel)]="uq[i]">{{a.opt3}}</td>
+        <td><input type=radio value={{a.opt4}} name="{{a.qno}}" [(ngModel)]="uq[i]">{{a.opt4}}</td>
+        
+    </tr>
+    </tbody>
+</table>
+<input type="submit" value="Submit" >
+
+</form>

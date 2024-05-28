@@ -1,0 +1,764 @@
+<div id="css introduction" class="tabcontent">
+    <h1>
+        <font color="green">CSS Introduction</font>
+    </h1>
+
+    <h4>CSS is the language we use to styel a web page.<br><br>
+    CSS describes how html elements should be displayed.
+    <br><br>CSS is the language we use to styel a web page.<br><br>
+    CSS stands for Cascading Style Sheets.<br><br>
+        
+ CSS describes how HTML elements are to be displayed on screen, paper, or in other media.<br><br>
+ CSS saves a lot of work. It can control the layout of multiple web pages all at once.<br><br>
+
+        External stylesheets are stored in CSS files.
+    </h4>
+    <hr color="white">
+
+    <h3><font color="green"><b>Why Use CSS?</b></font></h3>
+    <h4> CSS is used to define styles for your web pages, including the design, layout and variations in display for
+        different devices and screen sizes. </h4>
+    <h3><font color="green"> CSS Saves a Lot of Work!</font></h3>
+    <h4>The style definitions are normally saved in external .css files.<br>
+        With an external stylesheet file, you can change the look of an entire website by changing just one file!</h4>
+
+    <h1><font color="green">CSS Syntax</font></h1>
+    <h4> A CSS rule consists of a selector and a declaration block.</h4>
+    <h3><b>CSS Syntax</b></h3>
+
+    <h4>The selector points to the HTML element you want to style.<br><br>
+
+        The declaration block contains one or more declarations separated by semicolons.<br><br>
+
+        Each declaration includes a CSS property name and a value, separated by a colon.<br><br>
+
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly
+        braces.<br><br></h4>
+       
+<hr>
+       
+    
+
+    <h1><font color="green">CSS Selector</font></h1>
+    <h4>A CSS selector used to selects the HTML elements you want to style.</h4>
+    <h3>We can divide CSS selectors into five categories:</h3>
+    
+        <h4><li> Simple selectors (select elements based on name, id, class).</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them).</li>
+        <li> Pseudo-class selectors (select elements based on a certain state).</li>
+        <li>Pseudo-elements selectors (select and style a part of an element).</li>
+        <li> Attribute selectors (select elements based on an attribute or attribute value).</li>
+        </h4>
+        <h3><font color="red"> 1.The CSS element Selector</font></h3>
+        <h4> The element selector selects HTML elements based on the element name.</h4>
+
+
+
+        <h3> <font color="red">2.The CSS id Selector</font></h3>
+        <h4> The id selector uses the id attribute of an HTML element to select a specific element.<br>
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!<br>
+
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br>
+        </h4>
+
+
+        <h3><font color="red">3. The CSS class Selector</font></h3>
+        <h4> The class selector selects HTML elements with a specific class attribute.<br>
+
+            To select elements with a specific class, write a period (.) character, followed by the class name.</h4>
+
+
+        <h3><font color="red">4.The CSS Universal Selector</font> </h3>
+        <h4>The universal selector (*) selects all HTML elements on the page. </h4>
+
+
+        <h3><font color="red">5.The CSS Grouping Selector</font> </h3>
+        <h4>The grouping selector selects all the HTML elements with the same style definitions.</h4>
+
+
+        <hr>
+            <h1><font color="green"> CSS Types</font> </h1>
+            <h4>When a browser reads a style sheet, it will format the HTML document according to the information in the
+            style sheet.</h4>
+            <h3> Three Ways to Insert CSS</h3>
+
+            
+               <h3> External</h3>
+                <h4> With an external style sheet, you can change the look of an entire website by changing just one
+                    file!<br>
+                    Each HTML page must include a reference to the external style sheet file inside the element, inside
+                    the head section.<br>
+                    An external style sheet can be written in any text editor, and must be saved with a .css extension.
+                    The external .css file should not contain any HTML tags. </h4>
+
+                <h3> inline </h3>
+
+                <h4>
+                    An inline style may be used to apply a unique style for a single element.<br>
+
+                    To use inline styles, add the style attribute to the relevant element. The style attribute can
+                    contain any CSS property.</h4>
+                    
+
+                    <h3> Internal css </h3>
+                <h4> An internal style sheet may be used if one single HTML page has a unique style. <br>
+                    The internal style is defined inside the style element, inside the head section.</h4>
+
+<hr>
+
+               
+                    <h1><font color="green">CSS Comments</font> </h1>
+                   <h4> CSS comments are not displayed in the browser, but they can help document your source code.<br>
+                    Comments are used to explain the code, and may help when you edit the source code at a later date
+                    <br>
+                    Comments are ignored by browser. <br>
+                    A CSS comment is placed inside the style element, and starts with /* and ends with */ <br>
+                    There are two types of comments : <b> single line comment </b> and <b> multiline comments. </b></h4>
+
+                    <h3><b> Single line comment </b></h3>
+                    <h4>Single line syntax : /* This is a single-line comment */ </h4>
+
+
+                    <h3><b> Multiline comments</b> </h3>
+
+                    <h4>Multiline syntax : /* This is<br> a multiline<br>comment */ </h4>
+
+                <hr>
+
+                    <h1><font color="green">CSS Colors</font> </h1>
+                    <h4>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.<br>
+                        In CSS, a color can be specified by using a predefined color name.<br></h4>
+                    <h3> CSS Background color </h3>
+                    <h4>You can set the background color for HTML elements.</h4>
+
+                    <h3> CSS Text Color </h3>
+                    <h4> You can set the color of text.</h4>
+
+                    <h3> css border color </h3>
+                    <h4>you can set color to border.</h4>
+<hr>
+                   
+                    <h1><font color="green">CSS Backgrounds</font></h1>
+                    <h4> The CSS background properties are used to add background effects for elements.</h4>
+                    <h3> CSS background properties: </h3>
+                    <h4> background-color<br>
+                    background-image<br>
+                    background-repeat<br></h4>
+                <hr>
+
+                    <h1><font color="green">Background Color</font></h1>
+                    <h4> The background-color property specifies the background color of an element.</h4>
+                    <hr>
+
+                
+                    <h1><font color="green">Background Image</font> </h1>
+                    <h4>The background-image property specifies an image to use as the background of an element.<br>
+
+                        By default, the image is repeated so it covers the entire element.<br>
+
+                        When using a background image, use an image that does not disturb the text.<br></h4>
+                        <hr>
+                   
+
+                
+                    <h1><font color="green">Background Repeat </font></h1>
+                    <h4>
+                        By default, the background-image property repeats an image both horizontally and vertically.<br>
+
+                        Some images should be repeated only horizontally or vertically.<br>
+
+                        To repeat an image horizontally, set background-repeat: repeat-x;<br>
+
+                        To repeat an image vertically, set background-repeat: repeat-y;
+
+                    </h4>
+
+                    <h1><font color="green">CSS background-repeat: no-repeat</font></h1>
+                    <h4>
+                        Showing the background image only once is also specified by the background-repeat property.
+                    </h4>
+                    <h1><font color="green">CSS background-position</font></h1>
+                        <h4> The background-position property is used to specify the position of the background image.
+                        </h4>
+<hr>
+                
+                    <h1><font color="green">CSS Background Attachment</font></h1>
+                    <h4> The background-attachment property specifies whether the background image should scroll or be
+                        fixed (will not scroll with the rest of the page):</h4>
+                    <hr>
+                
+                    <h1><font color="green"> CSS Borders </font></h1>
+                    <h4>The CSS border properties allow you to specify the style, width, and color of an element's
+                        border.</h4>
+                    <h3> CSS border style</h3>
+                    <h4>dotted - Defines a dotted border
+
+                    dashed - Defines a dashed border</h4>
+                    
+
+                    <h4>solid - Defines a solid border </h4>
+
+                    <h4>double - Defines a double border</h4>
+                    
+
+                    <h4>groove - Defines a 3D grooved border. The effect depends on the border-color value</h4>
+
+                    <h4>rigid - Defines a 3D ridged border. The effect depends on the border-color value</h4>
+                    
+
+                    <h4>inset - Defines a 3D inset border. The effect depends on the border-color value</h4>
+
+                    <h4>outset - Defines a 3D outset border. The effect depends on the border-color value none - Defines
+                        no border</h4>
+                   
+
+                    <h4>hidden - Defines a hidden border</h4>
+
+                    <h4>mixed border - Defines the mixing of differnt border style,using to create a border. </h4>
+                   <hr>
+                    <h1><font color="green"> Border Width</font> </h1>
+                    <h4>The border-width property specifies the width of the four borders.
+
+                        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three
+                        pre-defined values: thin, medium, or thick. </h4>
+                   
+
+                    <h3> Specific Side Width </h3>
+                    <h4>The border-width property can have from one to four values (for the top border, right border,
+                        bottom border, and the left border):</h4>
+
+                </div>
+
+                <div id="border color" class="tabcontent">
+                    <h1><font color="green"> Border Color</font> </h1>
+                    <p>
+                        The border-color property is used to set the color of the four borders.<br>
+                        If border-color is not set, it inherits the color of the element.<br>
+                    </p>
+
+
+                    <h3>Specific Side Colors</h3>
+                    <p>The border-color property can have from one to four values (for the top border, right border,
+                        bottom border, and the left border).</p>
+
+                </div>
+
+                <div id="border sides" class="tabcontent">
+                    <h1><font color="green"> CSS Border - Individual Sides</font> </h1>
+                    <p>From the examples on the previous pages, you have seen that it is possible to specify a different
+                        border for each side.<br>
+                        In CSS, there are also properties for specifying each of the borders (top, right, bottom, and
+                        left).<br>
+
+                    <p>So, here is how it works:<br>
+                        If the border-style property has four values:<br>
+                    <h3>border-style: dotted solid double dashed;</h3>
+                    <p><b>So, here is how it works:</b></p>
+                    <p><b>top border is dotted<br>
+                            right border is solid<br>
+                            bottom border is double<br>
+                            left border is dashed<br></b></p>
+
+
+                    <p>If the border-style property has three values:</p>
+                    <h3>border-style: dotted solid double;</h3>
+                    <p><b>
+                            top border is dotted<br>
+                            right and left borders are solid<br>
+                            bottom border is double<br></b></p>
+
+                    <p>If the border-style property has two values:</p>
+                    <h3>border-style: dotted solid;</h3>
+                    <p><b>top and bottom borders are dotted<br>
+                            right and left borders are solid<br>
+                        </b></p>
+
+
+                    <p>If the border-style property has one value:</p>
+                    <h3>border-style: dotted;</h3>
+                    <p><b>all four borders are dotted</b></p>
+
+                </div>
+
+                <div id="border shorthands" class="tabcontent">
+                    <h1>Border Shorthand</h1>
+                    <p>To shorten the code, it is also possible to specify all the individual border properties in one
+                        property.<br>
+
+                        The border property is a shorthand property for the following individual border properties:<br>
+
+                        <b>border-width<br>
+                            border-style (required)<br>
+                            border-color</b><br>
+                    </p>
+
+
+                    <p><b>You can also specify all the individual border properties for just one side:</b></p>
+                    <p> Example : </p>
+
+                    <b>Bottom Border</b>
+                    <p> Example : </p>
+
+
+                    <div id="rounded borders" class="tabcontent">
+                        <h1>Rounded Borders</h1>
+                        <p>The border-radius property is used to add rounded borders to an element:</p>
+
+
+                    </div>
+
+                    <div id="css margins" class="tabcontent">
+                        <h1>CSS Margins</h1>
+                        <p>The CSS margin properties are used to create space around elements, outside of any defined
+                            borders.<br>
+
+                            With CSS, you have full control over the margins. There are properties for setting the
+                            margin for each side of an element (top, right, bottom, and left).<br>
+                        </p>
+
+                    </div>
+
+                    <div id="margin-individual sides" class="tabcontent">
+                        <h1>Margin-Individual Sides</h1>
+                        <p> CSS has properties for specifying the margin for each side of an element:</p>
+                        <b>margin-top<br>
+                            margin-right<br>
+                            margin-bottom<br>
+                            margin-left</b><br>
+                        <p>All the margin properties can have the following values:</p>
+                        <b>auto - the browser calculates the margin<br>
+                            length - specifies a margin in px, pt, cm, etc.<br>
+                            % - specifies a margin in % of the width of the containing element<br>
+                            inherit - specifies that the margin should be inherited from the parent element</b><br>
+
+                    </div>
+
+                    <div id="margin-shorthand property" class="tabcontent">
+                        <h1>Margin-Shorthand Property</h1>
+                        <p>
+                            To shorten the code, it is possible to specify all the margin properties in one
+                            property.<br>
+
+                            The margin property is a shorthand property for the following individual margin
+                            properties:<br>
+                            <b>margin-top<br>
+                                margin-right<br>
+                                margin-bottom<br>
+                                margin-left</b><br>
+                        <p>So, here is how it works:</p>
+                        <b>If the margin property has four values:</b>
+
+                        <h3>margin: 25px 50px 75px 100px;</h3>
+                        <b>top margin is 25px<br>
+                            right margin is 50px<br>
+                            bottom margin is 75px<br>
+                            left margin is 100px</b><br>
+                        <p> Example : </p>
+
+
+                        <b>If the margin property has three values:</b>
+                        <h3>margin: 25px 50px 75px;</h3>
+                        <b>
+                            top margin is 25px<br>
+                            right and left margins are 50px<br>
+                            bottom margin is 75px<br>
+                        </b>
+
+                        <b>If the margin property has two values:</b>
+                        <h3>margin: 25px 50px;</h3>
+                        <b>
+                            top and bottom margins are 25px<br>
+                            right and left margins are 50px<br>
+                        </b>
+
+                        <b>If the margin property has one value:</b>
+                        <h3>margin: 25px;</h3>
+                        <b>
+                            all four margins are 25px
+                        </b>
+
+
+
+                    </div>
+
+                    <div id="margin auto value" class="tabcontent">
+                        <h1>Margin Auto Value</h1>
+                        <p>You can set the margin property to auto to horizontally center the element within its
+                            container.<br>
+
+                            The element will then take up the specified width, and the remaining space will be split
+                            equally between the left and right margins.<br>
+
+                    </div>
+
+                    <div id="margins collapse" class="tabcontent">
+                        <h1>Margins Collapse</h1>
+                        <p>Sometimes two margins collapse into a single margin.<br>
+                            Top and bottom margins of elements are sometimes collapsed into a single margin that is
+                            equal to the largest of the two margins.<br>
+                            This does not happen on left and right margins! Only top and bottom margins!<br>
+                        </p>
+
+                    </div>
+
+                    <div id="CSS Padding" class="tabcontent">
+                        <h1>CSS Padding</h1>
+                        <p>
+                            The CSS padding properties are used to generate space around an element's content, inside of
+                            any defined borders.<br>
+
+                            With CSS, you have full control over the padding. There are properties for setting the
+                            padding for each side of an element (top, right, bottom, and left).<br>
+
+                        </p>
+
+                    </div>
+
+                    <div id="Padding-Individual Sides" class="tabcontent">
+                        <h1>Padding-Individual Sides</h1>
+                        <p>CSS has properties for specifying the padding for each side of an element:</p>
+                        <b>
+                            padding-top<br>
+                            padding-right<br>
+                            padding-bottom<br>
+                            padding-left</b><br>
+                        <p>All the padding properties can have the following values:</p>
+                        <p><b>length - specifies a padding in px, pt, cm, etc.<br>
+                                % - specifies a padding in % of the width of the containing element<br>
+                                inherit - specifies that the padding should be inherited from the parent element</b>br>
+                        </p>
+
+                    </div>
+
+                    <div id="Padding-Shorthand Property" class="tabcontent">
+                        <h1>Padding-Shorthand Property</h1>
+                        <p>To shorten the code, it is possible to specify all the padding properties in one
+                            property.<br>
+
+                            The padding property is a shorthand property for the following individual padding
+                            properties:<br>
+                        </p>
+                        <b>
+                            padding-top<br>
+                            padding-right<br>
+                            padding-bottom<br>
+                            padding-left<br>
+                        </b>
+                        <p>So, here is how it works:<br><br>
+
+                            If the padding property has four values:<br></p>
+                        <p><b>padding: 25px 50px 75px 100px;</b></p>
+
+                        top padding is 25px<br>
+                        right padding is 50px<br>
+                        bottom padding is 75px<br>
+                        left padding is 100px<br>
+
+
+
+                        <p>If the padding property has three values:</p>
+                        <p><b>padding: 25px 50px 75px;</b></p>
+
+                        top padding is 25px<br>
+                        right and left paddings are 50px<br>
+                        bottom padding is 75px<br>
+
+
+
+
+                        <p>If the padding property has two values:</p>
+                        <p><b>padding: 25px 50px;</b></p>
+
+                        top and bottom paddings are 25px<br>
+                        right and left paddings are 50px<br>
+
+
+
+                        <p>If the padding property has one value:</p>
+                        <p><b>padding: 25px;</b></p>
+
+                        all four paddings are 25px<br>
+
+
+                    </div>
+
+                    <div id="More Examples On Padding" class="tabcontent">
+                        <h1>More Examples On Padding</h1>
+                        <h3> set the left padding </h3>
+                        <p>This example demonstrates how to set the left padding of a
+                        <p> element.</p>
+
+
+                        <h3>set the right padding</h3>
+                        <p>This example demonstrates how to set the right padding of a
+                        <p> element.</p>
+
+
+                        <h3>set the top padding</h3>
+                        <p>This example demonstrates how to set the top padding of a
+                        <p> element.</p>
+
+                        <h3>set the bottom padding</h3>
+                        <p>This example demonstrates how to set the bottom padding of a
+                        <p> element.</p>
+
+                    </div>
+
+                    <div id="CSS Height/Width" class="tabcontent">
+                        <h1>CSS Height/Width</h1>
+                        <p>
+                            The CSS height and width properties are used to set the height and width of an element.<br>
+
+                            The CSS max-width property is used to set the maximum width of an element.<br>
+
+                            The height and width properties do not include padding, borders, or margins. It sets the
+                            height/width of the area inside the padding, border, and margin of the element.<br>
+                        </p>
+
+                        <h1>CSS height and width Values</h1>
+                        <p>The height and width properties may have the following values:</p>
+                        <p><b>
+                                auto - This is default. The browser calculates the height and width<br>
+                                length - Defines the height/width in px, cm, etc.<br>
+                                % - Defines the height/width in percent of the containing block<br>
+                                initial - Sets the height/width to its default value<br>
+                                inherit - The height/width will be inherited from its parent value<br>
+                            </b></p>
+
+                    </div>
+
+                    <div id="CSS Box Model" class="tabcontent">
+                        <h1>CSS Box Model</h1>
+                        <p>
+                            In CSS, the term "box model" is used when talking about design and layout.<br>
+
+                            The CSS box model is essentially a box that wraps around every HTML element. It consists of:
+                            margins, borders, padding, and the actual content. The image below illustrates the box
+                            model:<br>
+                        </p>
+
+                        <p>Explanation of the different parts:</p>
+                        <p>
+                            <b>Content</b> - The content of the box, where text and images appear<br>
+                            <b>Padding</b> - Clears an area around the content. The padding is transparent<br>
+                            <b>Border</b> - A border that goes around the padding and content<br>
+                            <b>Margin</b> - Clears an area outside the border. The margin is transparent<br>
+                        </p>
+
+                    </div>
+
+                    <div id="CSS Outline" class="tabcontent">
+                        <h1>CSS Outline</h1>
+                        <p>An outline is a line drawn outside the element's border.</p>
+                        <p>CSS has the following outline properties:</p>
+                        <b>
+                            outline-style<br>
+                            outline-color<br>
+                            outline-width<br>
+                            outline-offset<br>
+                        </b>
+                        <h1>CSS Outline Style</h1>
+                        <p>The outline-style property specifies the style of the outline, and can have one of the
+                            following values:</p>
+                        <b>
+                            dotted - Defines a dotted outline<br>
+                            dashed - Defines a dashed outline<br>
+                            solid - Defines a solid outline<br>
+                            double - Defines a double outline<br>
+                            groove - Defines a 3D grooved outline<br>
+                            ridge - Defines a 3D ridged outline<br>
+                            inset - Defines a 3D inset outline<br>
+                            outset - Defines a 3D outset outline<br>
+                            none - Defines no outline<br>
+                            hidden - Defines a hidden outline<br>
+                        </b>
+
+                    </div>
+
+                    <div id="Outline Width" class="tabcontent">
+                        <h1>Outline Width</h1>
+                        <p>The outline-width property specifies the width of the outline, and can have one of the
+                            following values:</p>
+
+                        <b>thin (typically 1px)<br>
+                            medium (typically 3px)<br>
+                            thick (typically 5px)<br>
+                            A specific size (in px, pt, cm, em, etc)<br>
+                        </b>
+
+                        <h2>Outline Width Thin</h2>
+
+
+                        <h2>Outline Width Medium</h2>
+
+                        <h2>Outline Width Thick</h2>
+
+                        <h2>Outline Width A Specific Size - px, pt, cm, em, etc.</h2>
+
+                    </div>
+
+                    <div id="Outline Color" class="tabcontent">
+                        <h1>Outline Color</h1>
+                        <p>The outline-color property is used to set the color of the outline.<br><br>
+
+                            The color can be set by:<br>
+                        </p>
+
+                        <b>
+                            name - specify a color name, like "red"<br>
+                            HEX - specify a hex value, like "#ff0000"<br>
+                            RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+                            HSL - specify a HSL value, like "hsl(0, 100%, 50%)"<br>
+                            invert - performs a color inversion (which ensures that the outline is visible, regardless
+                            of color background)<br>
+                        </b>
+
+
+
+                    </div>
+
+                    <div id="Outline Shorthand" class="tabcontent">
+                        <h1>Outline Shorthand</h1>
+                        <p> The outline property is a shorthand property for setting the following individual outline
+                            properties:</p>
+                        <b>
+                            outline-width<br>
+                            outline-style (required)<br>
+                            outline-color<br>
+                        </b>
+                        <p>The outline property is specified as one, two, or three values from the list above. The order
+                            of the values does not matter.</p>
+
+                    </div>
+
+                    <div id="Outline Offset" class="tabcontent">
+                        <h1>Outline Offset</h1>
+                        <p>The outline-offset property adds space between an outline and the edge/border of an element.
+                            The space between an element and its outline is transparent.</p>
+
+                    </div>
+
+                    <div id="CSS Text" class="tabcontent">
+                        <h1>CSS Text</h1>
+                        <p>CSS has a lot of properties for formatting text.</p>
+
+                    </div>
+
+                    <div id="Text Color" class="tabcontent">
+                        <h1>Text Color</h1>
+                        <p> The color property is used to set the color of the text. The color is specified by:</p>
+                        <b>a color name - like "red"<br>
+                            a HEX value - like "#ff0000"<br>
+                            an RGB value - like "rgb(255,0,0)"</b><br>
+
+
+                    </div>
+
+                    <div id="Text Alignment" class="tabcontent">
+                        <h1>Text Alignment</h1>
+                        <h1>Text Alignment And Text Direction</h1>
+                        <p>In this chapter you will learn about the following properties:</p>
+                        <b>1.text-align</b><br>
+                        <b>2.text-align-last</b><br>
+                        <b>3.direction</b><br>
+                        <b>4.unicode-bidi</b><br>
+                        <b>5.vertical-align</b><br>
+
+                        <h1>Text Alignment</h1>
+                        <p>The text-align property is used to set the horizontal alignment of a text.<br>
+                            A text can be left or right aligned, centered, or justified.<br>
+                            left alignment is default if text direction is left-to-right, and right alignment is default
+                            if text direction is right-to-left
+                        </p>
+                        <hr>
+
+
+                    </div>
+
+                    <div id="Text Decoration" class="tabcontent">
+                        <h1>Text Decoration</h1>
+                        <p>In this chapter you will learn about the following properties:</p>
+                        <b>text-decoration-line</b><br>
+                        <b>text-decoration-color</b><br>
+                        <b>text-decoration-style</b><br>
+                        <b>text-decoration-thickness</b><br>
+                        <b>text-decoration</b><br>
+                        <hr>
+                        <h1>Add a Decoration Line to Text</h1>
+
+                        <h1>Specify style for the Decoration Line</h1>
+                        <p>The text-decoration-style property is used to set the style of the decoration line.</p>
+                        <b>text-decoration-style: solid</b><br>
+                        <b>text-decoration-style: double</b><br>
+                        <b>text-decoration-style: dotted</b><br>
+                        <b>text-decoration-style: dashed</b><br>
+                        <b>text-decoration-style: wavy</b><br>
+
+
+
+
+                    </div>
+
+                    <div id="Text Transformation" class="tabcontent">
+                        <h1>Text Transformation</h1>
+                        <p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+                        <b>uppercase</b><br>
+                        <b>lowercase</b><br>
+                        <b>capitalize</b><br>
+                        <hr>
+
+
+
+                    </div>
+
+                    <div id="Text Spacing" class="tabcontent">
+                        <h1>Text Spacing</h1>
+                        <p>In this chapter you will learn about the following properties: </p>
+                        <b>text-indent</b><br>
+                        <b>letter-spacing</b><br>
+                        <b>line-height</b><br>
+                        <b>word-spacing</b><br>
+
+                        <hr>
+
+                        <h1>Text Indentation</h1>
+                        <p>The text-indent property is used to specify the indentation of the first line of a text:</p>
+
+                        <h1>Letter Spacing</h1>
+                        <p>The letter-spacing property is used to specify the space between the characters in a text.
+                        </p><br>
+
+                        <p>The following example demonstrates how to increase or decrease the space between characters:
+                        </p>
+
+
+                        <h1>Line Height</h1>
+                        <p>The line-height property is used to specify the space between lines:</p>
+                        <p>Example</p>
+
+                        <h1>Word Spacing</h1>
+                        <p>The word-spacing property is used to specify the space between the words in a text.<br>
+
+                            The following example demonstrates how to increase or decrease the space between words:</p>
+
+                    </div>
+
+
+
+                    <div id="CSS Fonts" class="tabcontent">
+                        <h1>CSS Fonts</h1>
+                        <p>Choosing the right font for your website is important!</p>
+                        <hr>
+
+                        <h1>Font Selection is Important</h1>
+                        <p>Choosing the right font has a huge impact on how the readers experience a website.<br><br>
+
+                            The right font can create a strong identity for your brand.<br><br>
+
+                            Using a font that is easy to read is important. The font adds value to your text. It is also
+                            important to choose the correct color and text size for the font. </p>
+
+                    </div>
+
+                    

@@ -1,0 +1,20 @@
+<div>
+  <h3>LOGIN HERE</h3>
+  
+  
+  
+    <form (submit)="submitdata()">
+      
+      <label for="em">EMAIL ID</label><br>
+      <input type="email" name="em" id="em" placeholder="Enter email here" required [(ngModel)]="reg.emailid"><br>
+      <label for="ps">PASSWORD</label><br>
+      <input type="password" name="ps" id="ps" placeholder="Enter password here"required [(ngModel)]="reg.password"><br>
+      
+    
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+  
+  

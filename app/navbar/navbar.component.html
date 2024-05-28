@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar" [ngSwitch]="menuType">
+        <ul class="nav navbar-nav" *ngSwitchCase="'guest'">
+          <li ><a href="">Easy Learning</a></li>
+          <li class="active" ><a routerLink="/">Home</a></li>
+          <li ><a routerLink="/htm" >HTML</a></li>
+          <li ><a routerLink="/cs">CSS</a></li>
+          <li ><a routerLink="/js">JAVASCRIPT</a></li>
+        
+          <li><a routerLink="/reg"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+          <li><a routerLink="/log"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a routerLink="/alog"><span class="glyphicon glyphicon-log-in"></span> Admin Login</a></li>
+   </ul>
+
+   <ul class="nav navbar-nav" *ngSwitchCase="'user'">
+    <li ><a href="">Easy Learning</a></li>
+    <li class="active" ><a routerLink="/">Home</a></li>
+     <li ><a routerLink="/htm" >HTML</a></li>
+    <li ><a routerLink="/cs">CSS</a></li>
+    <li ><a routerLink="/js">JAVASCRIPT</a></li>
+    <li ><a routerLink="/mcqht">HTML MCQ</a></li>
+    <li ><a routerLink="/mcqcs">CSS MCQ</a></li>
+    <li ><a routerLink="/mcqjs">JAVASCRIPT MCQ</a></li>
+    <li ><a routerLink="/feedback">FEEDBACK</a></li>
+    
+
+    <li><a (click)="slogout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+</ul>
+
+<ul class="nav navbar-nav" *ngSwitchCase="'admin'">
+  <li ><a href="">Easy Learning</a></li>
+  <li class="active" ><a routerLink="/">Home</a></li>
+  <li ><a routerLink="/viewreg">View Register</a></li>
+  <li ><a routerLink="/viewfeedback">View FEEDBACK</a></li>
+  <li><a routerLink="/addmcq">Add MCQ</a></li>
+  
+  <li><a (click)="alogout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+</ul>
+ 
+
+        
+      
+      </div>
+    

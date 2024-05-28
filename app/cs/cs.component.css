@@ -1,0 +1,23 @@
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    background-color:white;
+    color:black;
+    
+
+}

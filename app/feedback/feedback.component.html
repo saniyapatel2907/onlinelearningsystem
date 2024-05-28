@@ -1,0 +1,22 @@
+<div>
+<h3 >FEEDBACK </h3>
+
+
+  <form (submit)="submitdata()">
+    <label for="fname">NAME</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Enter name here"required [(ngModel)]="f.name"><br>
+    
+    <label for="em">EMAIL ID</label><br>
+        <input type="email" name="em" id="em" placeholder="Enter email here" required [(ngModel)]="f.emailid"><br>
+        <label for="fname">Feedback Details</label><br>
+        <input type="text" id="fdetils" name="Feedbackdetails" placeholder="Enter Feedback here"required [(ngModel)]="f.feedbackdetails"><br>
+        <br>
+
+
+
+    
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</div>

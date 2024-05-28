@@ -1,0 +1,76 @@
+<div>
+    <h3 >REGISTER HERE</h3>
+    
+    <div>
+      <form #regForm="ngForm" (ngSubmit)="submitdata(regForm)">
+        <label for="firstnm">NAME</label><br>
+        <input type="text" name="firstnm"  placeholder=" Enter Your Name here"#firstnm="ngModel" ngModel required pattern="^[a-zA-Z]+$">
+   <div *ngIf="!firstnm.valid" style="color: red;">
+  <div *ngIf="firstnm.errors?.['required']">
+     Name Is Required
+  </div>
+  <div *ngIf="firstnm.errors?.['pattern']">
+     Name Can Contain Only Alphabets
+  </div>
+  </div>
+  <br>
+        <label for="ad">ADDRESS</label><br>
+        <input type="text" id="ad" name="ad" placeholder=" Enter Your address here" #ad="ngModel" ngModel required ><br>
+        <div *ngIf="!ad.valid" style="color: red;">
+          
+            Address Is Required
+          </div>
+          
+          <br>
+
+          <label for="contact">CONTACT</label><br>
+          <input type="text" name="contact" #contact="ngModel" ngModel required pattern="[0-9]{10}">
+
+          <div *ngIf="!contact.valid" style="color: red;">
+            <div *ngIf="contact.errors?.['required']">
+              contact Is Required
+            </div>
+            <div *ngIf="contact.errors?.['pattern']">
+              contact Can Contain 10 digits
+            </div>
+            </div>
+            <br>
+
+        <label for="bd">BIRTH DATE</label><br>
+        <input type="date" name="bd" id="bd" placeholder="Enter birthdate here" required [(ngModel)]="reg.birthdate"><br>
+        <label for="em">EMAIL ID</label><br>
+       <input type="email" name="email" #email="ngModel" ngModel required  email >
+        <div *ngIf="!email.valid" style="color: red;">
+          <div *ngIf="email.errors?.['required']">
+            Email Is Required
+          </div>
+          <div *ngIf="email.errors?.['email']">
+           Enter Valid Email 
+          </div>
+          </div>
+          <br>
+            
+
+            <label for="ps">PASSWORD</label><br>
+            <input type="password" name="pass" #pass="ngModel" ngModel required>
+<div *ngIf="!pass.valid" style="color: red;">
+  <div *ngIf="pass.errors?.['required']">
+    Password is Required
+  </div>
+  </div><br>
+            <label for="gn">GENDER :</label>
+            <input type="radio" name="gn" id="gn" value="MALE" [(ngModel)]="reg.gender">MALE
+        <input type="radio" name="gn" id="gn" value="FEMALE">FEMALE
+        <br>
+        <input type="checkbox" name="chk" id="chk" value="accept">I accept the terms and conditions
+    
+    <br>
+    
+    
+        
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    </div>
